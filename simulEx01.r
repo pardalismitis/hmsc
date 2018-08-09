@@ -16,17 +16,17 @@ set.seed(1)
 
 ### Set working directory
 #============================================
-setwd("/my HMSC-R folder/ ")
+setwd("C:/Users/parda/Dropbox/SCRIPTS/hmsc-data_0/HMSC-data")
 
 ### Load the simulated data
 #============================================
 # From .csv-files
 ### Community matrix
-Y <- apply(read.csv("data/simulated/Y.csv"),2,as.numeric)
+Y <- apply(read.csv("simulated/Y.csv"),2,as.numeric)
 ### Covariates
-X <- read.csv("data/simulated/X.csv")
+X <- read.csv("simulated/X.csv")
 ### Random effects
-Pi <- read.csv("data/simulated/Pi.csv")
+Pi <- read.csv("simulated/Pi.csv")
 ### Covert all columns of Pi to a factor
 Pi <- data.frame(apply(Pi,2,as.factor))
 
